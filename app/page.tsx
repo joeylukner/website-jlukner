@@ -1,24 +1,7 @@
 import Image from "next/image";
-import Projects from "./projects"
+import Projects from "./projects/page"
 import Link from "next/link";
-// import { createBrowserRouter } from "react-router";
 
-// let router = createBrowserRouter([
-//   {
-//     path: "/",
-//     Component: Root,
-//     children: [
-//       {
-//         path: "shows/:showId",
-//         Component: Show,
-//         loader: ({request, params }) =>
-//           fetch(`/api/show/${params.showId}.json`, {
-//             signal: request.signal,
-//           }),
-//       },
-//     ],
-//   },
-// ])
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -39,7 +22,7 @@ export default function Home() {
             <p className="max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400 px-8">
             Welcome to my website! I'm a software developer with 2 years of professional experience. I started coding in high school and found a passion for the problem solving of engineering.
           </p>
-          {/* <Link><button>About</button></Link> */}
+          <Link href={"/projects"}><button>About</button></Link>
           </div>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
