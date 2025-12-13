@@ -1,28 +1,43 @@
 import Image from "next/image";
 import Link from "next/link";
 
+function Toolbar() {
+  return (
+    <div className="flex flex-row justify-end">
+      <Link href={"/projects"}>
+        <button className="button-toolbar">Projects</button>
+      </Link>
+      <Link href={"/about"}>
+        <button className="button-toolbar">About</button>
+      </Link>
+      <Link href={"/contact"}>
+        <button className="button-toolbar">Contact</button>
+      </Link>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black"> 
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <Toolbar />
       <main className="flex min-h-screen w-full max-w-5xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <div className="flex flex-row justify-end">
-          <Link href={"/projects"}><button className="button-toolbar">Projects</button></Link>
-          <Link href={"/about"}><button className="button-toolbar">About</button></Link>
-          <Link href={"/contact"}><button className="button-toolbar">Contact</button></Link>
-        </div>
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
             Joey Lukner
           </h1>
           <div className="flex flex-row">
-            <Image 
-            src="/headshot.JPG"
-            alt="headshot"
-            width={250}
-            height={250}/>
+            <Image
+              src="/headshot.JPG"
+              alt="headshot"
+              width={250}
+              height={250}
+            />
             <p className="max-w-xl text-lg leading-8 text-zinc-600 dark:text-zinc-400 px-8">
-            Welcome to my website! I'm a software developer with 2 years of professional experience. I started coding in high school and found a passion for the problem solving of engineering.
-          </p>
+              Welcome to my website! I'm a software developer with 2 years of
+              professional experience. I started coding in high school and found
+              a passion for the problem solving of engineering.
+            </p>
           </div>
         </div>
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
