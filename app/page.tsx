@@ -3,7 +3,7 @@ import Link from "next/link";
 
 function Toolbar() {
   return (
-    <div className="flex flex-row justify-end">
+    <div className="flex flex-row">
       <Link href={"/projects"}>
         <button className="button-toolbar">Projects</button>
       </Link>
