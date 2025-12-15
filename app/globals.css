@@ -28,8 +28,7 @@ body {
 .button-toolbar {
   border: 1px solid #333;
   padding: .5rem;
-  margin-left: .5rem;
-  margin-right: .5rem;
+  margin: .25rem .5rem;
   border-radius: 8px;
 }
 
