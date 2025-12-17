@@ -36,3 +36,9 @@ body {
   background-color: #d3d3d3;
   cursor: pointer;
 }
+
+.form-standard {
+  border: 1px solid #333;
+  border-radius: 8px;
+  margin: .25rem .5rem;
+}

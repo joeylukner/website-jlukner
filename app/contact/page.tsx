@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm, SubmitHandler } from "react-hook-form";
@@ -24,6 +25,19 @@ export default function Contact() {
         <button className="button-toolbar">Home</button>
       </Link>
       <Image src="/headshot.JPG" alt="headshot" width={250} height={250} />
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          className="form-standard"
+          defaultValue="test"
+          {...register("example")}
+        />
+        <input
+          className="form-standard"
+          {...register("exampleRequired", { required: true })}
+        />
+        {errors.exampleRequired && <span>This field is required</span>}
+        <input className="form-standard" type="submit" />
+      </form>
     </div>
   );
 }
