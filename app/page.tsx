@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-
+{
+  /* // TODO move all of this to globals.css */
+}
 function Toolbar() {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row justify-end toolbar">
       <Link href={"/projects"}>
         <button className="button-toolbar">Projects</button>
       </Link>
