@@ -34,8 +34,9 @@ body {
 
 .toolbar {
   width: 100%;
-  flex-direction: row;
+  display: flex;
   justify-content: flex-end;
+  padding-bottom: 3rem;
 }
 
 .button-toolbar:hover {
