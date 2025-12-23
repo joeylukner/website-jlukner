@@ -28,8 +28,11 @@ export default function Contact() {
             <button className="button-toolbar">Home</button>
           </Link>
         </div>
+        <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
+          Contact me!
+        </h1>
         <Image src="/headshot.JPG" alt="headshot" width={250} height={250} />
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
           <label>
             Full name
             <input
