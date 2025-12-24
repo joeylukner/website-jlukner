@@ -33,23 +33,23 @@ export default function Contact() {
         </h1>
         <Image src="/headshot.JPG" alt="headshot" width={250} height={250} />
         <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col">
-          <label>
-            Full name
+          <label className="flex flex-row justify-between items-center">
+            <span>Full name</span>
             <input
               className="form-standard"
               defaultValue="test"
               {...register("fullName")}
             />
           </label>
-          <label>
-            Email address
+          <label className="flex flex-row justify-between items-center">
+            <span>Email address</span>
             <input
               className="form-standard"
               {...register("emailAddress", { required: true })}
             />
           </label>
-          <label>
-            Message{" "}
+          <label className="flex flex-row justify-between items-center">
+            <span>Message </span>
             <input
               className="form-standard"
               {...register("message", { required: true })}
