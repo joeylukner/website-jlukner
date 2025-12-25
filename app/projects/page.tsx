@@ -10,6 +10,9 @@ export default function Projects() {
             <button className="button-toolbar">Home</button>
           </Link>
         </div>
+        <h1>Morphological Transducer for Hän</h1>
+        <h1>Social Networking App for Restaurants</h1>
+        <h1>Website Portfolio</h1>
         <Image src="/headshot.JPG" alt="headshot" width={250} height={250} />
       </div>
     </div>
