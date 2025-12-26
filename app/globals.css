@@ -50,7 +50,7 @@ body {
   margin: .25rem .5rem;
 }
 
-.h1 {
+h1 {
   font-size: var(--text-3xl);
   font-weight: var(--font-weight-semibold);
 }

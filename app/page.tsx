@@ -10,6 +10,9 @@ function Toolbar() {
       <Link href={"/about"}>
         <button className="button-toolbar">About</button>
       </Link>
+      <Link href={"/library"}>
+        <button className="button-toolbar">My Library</button>
+      </Link>
       <Link href={"/contact"}>
         <button className="button-toolbar">Contact</button>
       </Link>
