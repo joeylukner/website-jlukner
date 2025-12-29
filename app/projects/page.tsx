@@ -10,10 +10,17 @@ export default function Projects() {
             <button className="button-toolbar">Home</button>
           </Link>
         </div>
-        <h1>Morphological Transducer for Hän</h1>
-        <h1>Social Networking App for Restaurants</h1>
-        <h1>Website Portfolio</h1>
-        <Image src="/headshot.JPG" alt="headshot" width={250} height={250} />
+        <div className="flex flex-col justify-between">
+          <h1>Reading Library Catalog</h1>
+          <p>
+            My main personal project outside of work, this catalog is a space to
+            exhibit my skills in web development, ux design, and love for
+            reading{" "}
+          </p>
+          <h1>Morphological Transducer for Hän</h1>
+          <h1>Social Networking App for Restaurants</h1>
+          <h1>Website Portfolio</h1>
+        </div>
       </div>
     </div>
   );
