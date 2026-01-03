@@ -12,7 +12,7 @@ export default function About() {
           </Link>
         </div>
         <h1>My Library</h1>
-        <p>{libraryText}</p>
+        <p className="library-text">{libraryText}</p>
       </div>
     </div>
   );

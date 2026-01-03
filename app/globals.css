@@ -59,6 +59,10 @@ body {
   padding-inline-start: 25%;
 }
 
+.library-text {
+  white-space: pre-line;
+}
+
 h1 {
   font-size: var(--text-3xl);
   font-weight: var(--font-weight-semibold);
