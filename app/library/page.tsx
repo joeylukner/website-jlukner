@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import { libraryText } from "../assets/texts";
+import {
+  libraryText,
+  literaryFiction,
+  yaGold,
+  classics,
+  comedy,
+} from "../assets/texts";
 
 export default function About() {
   return (
@@ -13,6 +19,14 @@ export default function About() {
         </div>
         <h1>My Library</h1>
         <p className="library-text">{libraryText}</p>
+        <h2>Literary Fiction</h2>
+        <p className="library-text">{literaryFiction}</p>
+        <h2>Classics</h2>
+        <p className="library-text">{classics}</p>
+        <h2>Comedy</h2>
+        <p className="library-text">{comedy}</p>
+        <h2>YA Gold</h2>
+        <p className="library-text">{yaGold}</p>
       </div>
     </div>
   );
