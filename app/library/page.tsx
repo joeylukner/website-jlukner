@@ -1,5 +1,7 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import { Accordion, AccordionItem } from "@heroui/accordion";
 import {
   libraryText,
   literaryFiction,
@@ -19,14 +21,25 @@ export default function About() {
         </div>
         <h1>My Library</h1>
         <p className="library-text">{libraryText}</p>
-        <h2>Literary Fiction</h2>
-        <p className="library-text">{literaryFiction}</p>
-        <h2>Classics</h2>
-        <p className="library-text">{classics}</p>
-        <h2>Comedy</h2>
-        <p className="library-text">{comedy}</p>
-        <h2>YA Gold</h2>
-        <p className="library-text">{yaGold}</p>
+
+        <Accordion>
+          <AccordionItem
+            key="1"
+            aria-label="Accordion 1"
+            title="Literary Fiction"
+          >
+            <p className="library-text">{literaryFiction}</p>
+          </AccordionItem>
+          <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
+            <p className="library-text">{classics}</p>
+          </AccordionItem>
+          <AccordionItem key="3" aria-label="Accordion 3" title="Comedy">
+            <p className="library-text">{comedy}</p>
+          </AccordionItem>
+          <AccordionItem key="4" aria-label="Accordion 4" title="YA Gold">
+            <p className="library-text">{yaGold}</p>
+          </AccordionItem>
+        </Accordion>
       </div>
     </div>
   );
