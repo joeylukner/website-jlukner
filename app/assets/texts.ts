@@ -1,4 +1,4 @@
-export const libraryText: string = `Welcome to my library. I like to read. A lot.
+export const libraryText: string = `Welcome to my library. I spent a lot of free time reading.
 Every year since 2020, I've completed a 52-book challenge, reading an average of
 a book per week. Throughout this time, my tastes have changed a lot and certain 
 preferences have stayed the same. This is a digital compilation of all of my all-time
