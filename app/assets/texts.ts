@@ -12,6 +12,11 @@ export const yaGold: string = `
 \u2022 New Moon by Stephanie Meyer
 
 `;
+export const yaGoldArr = [
+    {title: "The Song of Achilles", author: "Madeline Miller"},
+    {title: "Carry On", author: "Rainbow Rowell"},
+    {title: "New Moon", author: "Stephanie Myer"},
+]; 
 
 export const comedy: string = `
 \u2022 Jitterbug perfume, by Tom Robbins

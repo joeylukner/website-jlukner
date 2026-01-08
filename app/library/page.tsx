@@ -8,6 +8,7 @@ import {
   yaGold,
   classics,
   comedy,
+  yaGoldArr,
 } from "../assets/texts";
 
 export default function About() {
@@ -37,6 +38,13 @@ export default function About() {
             <p className="library-text">{comedy}</p>
           </AccordionItem>
           <AccordionItem key="4" aria-label="Accordion 4" title="YA Gold">
+            <ul>
+              {yaGoldArr.map((book) => (
+                <li key={book.title}>
+                  <em>{book.title}</em> by {book.author}
+                </li>
+              ))}
+            </ul>
             <p className="library-text">{yaGold}</p>
           </AccordionItem>
         </Accordion>
