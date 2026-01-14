@@ -5,9 +5,12 @@ import { Accordion, AccordionItem } from "@heroui/accordion";
 import {
   libraryText,
   literaryFiction,
+  litFictionArr,
   yaGold,
   classics,
+  classicsArr,
   comedy,
+  comedyArr,
   yaGoldArr,
 } from "../assets/texts";
 
@@ -29,13 +32,40 @@ export default function About() {
             aria-label="Accordion 1"
             title="Literary Fiction"
           >
-            <p className="library-text">{literaryFiction}</p>
+            <ul className="list-disc pl-4">
+              {litFictionArr.map((book) => (
+                <li key={book.title}>
+                  <strong>
+                    <em>{book.title}</em>
+                  </strong>{" "}
+                  by {book.author}
+                </li>
+              ))}
+            </ul>
           </AccordionItem>
           <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
-            <p className="library-text">{classics}</p>
+            <ul className="list-disc pl-4">
+              {classicsArr.map((book) => (
+                <li key={book.title}>
+                  <strong>
+                    <em>{book.title}</em>
+                  </strong>{" "}
+                  by {book.author}
+                </li>
+              ))}
+            </ul>
           </AccordionItem>
           <AccordionItem key="3" aria-label="Accordion 3" title="Comedy">
-            <p className="library-text">{comedy}</p>
+            <ul className="list-disc pl-4">
+              {comedyArr.map((book) => (
+                <li key={book.title}>
+                  <strong>
+                    <em>{book.title}</em>
+                  </strong>{" "}
+                  by {book.author}
+                </li>
+              ))}
+            </ul>
           </AccordionItem>
           <AccordionItem key="4" aria-label="Accordion 4" title="YA Gold">
             <ul className="list-disc pl-4">

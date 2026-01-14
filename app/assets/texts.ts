@@ -26,6 +26,13 @@ export const comedy: string = `
 
 `;
 
+export const comedyArr = [
+    {title: "Jitterbug Perfume", author: "Tom Robbins"},
+    {title: "Still Life With Woodpecker", author: "Tom Robbins"},
+    {title: "High Maintenance", author: "Jennifer Belle"},
+    {title: "Crazy Rich Asians", author: "Kevin Kwan"}
+]
+
 export const literaryFiction: string = `
 \u2022 The Secret History by Donna Tartt
 \u2022 Confessions of a Mask by Yukio Mishima
@@ -36,6 +43,16 @@ export const literaryFiction: string = `
 \u2022 The Book of Salt by Madeline Truong
 
 `;
+
+export const litFictionArr = [
+    {title: "The Secret History", author: "Donna Tartt" },
+    {title: "Confessions of a Mask", author: "Yukio Mishima" },
+    {title: "The Pillars of the Earth", author: "Ken Follett" },
+    {title: "World Without End", author: "Ken Follett" },
+    {title: "American Psycho", author: "Bret Easton Ellis" },
+    {title: "The Dutch House", author: "Ann Patchett" },
+    {title: "The Book of Salt", author: "Madeline Truong" }
+]
 
 export const classics:string = `
 \u2022 Jane Eyre by Charlotte Brontë
@@ -48,6 +65,17 @@ export const classics:string = `
 \u2022 Swann's Way by Marcel Proust
 
 `;
+
+export const classicsArr = [
+    {title: "Jane Eyre", author: "Charlotte Brontë" },
+    {title: "Anna Karenina", author: "Leo Tolstoy" },
+    {title: "Pride and Prejudice", author: "Jane Austen" },
+    {title: "Ladies of the Rachmaninoff Eyes", author: "Henry Van Dyke" },
+    {title: "Love in the Time of Cholera", author: "Gabriel García Márquez" },
+    {title: "One Hundred Years of Solitude", author: "Gabriel García Márquez" },
+    {title: "The Wrath of Dionysus", author: "Nagrodskaia Evdokia" },
+    {title: "Swann's Way", author: "Marcel Proust" }
+]
 
 export const welcome: string = `Welcome to my website! I'm a software developer 
 with 2 years of professional experience. I started coding in high school and 
