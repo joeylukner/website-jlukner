@@ -12,7 +12,7 @@ export const yaGold: string = `
 \u2022 New Moon by Stephanie Meyer
 
 `;
-export const yaGoldArr = [
+export const yaGoldArr : Book[] = [
     {title: "The Song of Achilles", author: "Madeline Miller"},
     {title: "Carry On", author: "Rainbow Rowell"},
     {title: "New Moon", author: "Stephanie Myer"},
@@ -26,7 +26,7 @@ export const comedy: string = `
 
 `;
 
-export const comedyArr = [
+export const comedyArr : Book[] = [
     {title: "Jitterbug Perfume", author: "Tom Robbins"},
     {title: "Still Life With Woodpecker", author: "Tom Robbins"},
     {title: "High Maintenance", author: "Jennifer Belle"},
@@ -44,7 +44,12 @@ export const literaryFiction: string = `
 
 `;
 
-export const litFictionArr = [
+export interface Book {
+    title: string;
+    author: string;
+}
+
+export const litFictionArr : Book[] = [
     {title: "The Secret History", author: "Donna Tartt" },
     {title: "Confessions of a Mask", author: "Yukio Mishima" },
     {title: "The Pillars of the Earth", author: "Ken Follett" },
@@ -66,7 +71,7 @@ export const classics:string = `
 
 `;
 
-export const classicsArr = [
+export const classicsArr : Book[] = [
     {title: "Jane Eyre", author: "Charlotte Brontë" },
     {title: "Anna Karenina", author: "Leo Tolstoy" },
     {title: "Pride and Prejudice", author: "Jane Austen" },

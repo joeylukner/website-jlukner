@@ -4,23 +4,34 @@ import {
   classicsArr,
   comedyArr,
   yaGoldArr,
+  Book,
 } from "../assets/texts";
+
+interface GenreProps {
+  bookArr: Book[];
+  title: string;
+}
+
+function Genre({ bookArr, title }: GenreProps) {
+  return (
+    <AccordionItem key={title} title={title}>
+      <ul className="list-disc pl-4 pb-4">
+        {bookArr.map((book) => (
+          <li key={book.title}>
+            <strong>
+              <em>{book.title}</em>
+            </strong>{" "}
+            by {book.author}
+          </li>
+        ))}
+      </ul>
+    </AccordionItem>
+  );
+}
 
 export default function LibraryAccordion() {
   return (
     <Accordion>
-      <AccordionItem key="1" aria-label="Accordion 1" title="Literary Fiction">
-        <ul className="list-disc pl-4 pb-4">
-          {litFictionArr.map((book) => (
-            <li key={book.title}>
-              <strong>
-                <em>{book.title}</em>
-              </strong>{" "}
-              by {book.author}
-            </li>
-          ))}
-        </ul>
-      </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
         <ul className="list-disc pl-4 pb-4">
           {classicsArr.map((book) => (
