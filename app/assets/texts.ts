@@ -41,6 +41,17 @@ export const litFictionArr : Book[] = [
     {title: "The Book of Salt", author: "Madeline Truong" }
 ]
 
+export const literaryFiction: string = `
+\u2022 The Secret History by Donna Tartt
+\u2022 Confessions of a Mask by Yukio Mishima
+\u2022 The Pillars of the Earth by Ken Follett
+\u2022 World Without End by Ken Follett
+\u2022 American Psycho by Bret Easton Ellis
+\u2022 The Dutch House by Ann Patchett
+\u2022 The Book of Salt by Madeline Truong
+
+`;
+
 export const classicsArr : Book[] = [
     {title: "Jane Eyre", author: "Charlotte Brontë" },
     {title: "Anna Karenina", author: "Leo Tolstoy" },

@@ -5,6 +5,7 @@ import {
   classicsArr,
   comedyArr,
   yaGoldArr,
+  literaryFiction,
   Book,
 } from "../assets/texts";
 
@@ -26,12 +27,13 @@ function Genre({ bookArr }: GenreProps) {
     </ul>
   );
 }
+// <Genre bookArr={litFictionArr} />
 
 export default function LibraryAccordion() {
   return (
     <Accordion>
       <AccordionItem key="1" aria-label="Accordion 1" title="Literary Fiction">
-        <Genre bookArr={litFictionArr} />
+        <p className="library-text">{literaryFiction}</p>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
         <Genre bookArr={classicsArr} />
