@@ -1,11 +1,13 @@
 "use client";
 import { Accordion, AccordionItem } from "@heroui/accordion";
+import Image from "next/image";
+import { Tooltip } from "react-tippy";
+
 import {
   litFictionArr,
   classicsArr,
   comedyArr,
   yaGoldArr,
-  literaryFiction,
   Book,
 } from "../assets/texts";
 
@@ -27,13 +29,15 @@ function Genre({ bookArr }: GenreProps) {
     </ul>
   );
 }
-// <Genre bookArr={litFictionArr} />
 
 export default function LibraryAccordion() {
   return (
     <Accordion>
       <AccordionItem key="1" aria-label="Accordion 1" title="Literary Fiction">
-        <p className="library-text">{literaryFiction}</p>
+        <Genre bookArr={litFictionArr} />
+        <Tooltip content="Welcome to React" position="bottom" trigger="click">
+          Click here to show popup
+        </Tooltip>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
         <Genre bookArr={classicsArr} />
