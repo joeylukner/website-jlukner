@@ -1,7 +1,6 @@
 "use client";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import Image from "next/image";
-import { Tooltip } from "react-tippy";
 
 import {
   litFictionArr,
@@ -35,9 +34,6 @@ export default function LibraryAccordion() {
     <Accordion>
       <AccordionItem key="1" aria-label="Accordion 1" title="Literary Fiction">
         <Genre bookArr={litFictionArr} />
-        <Tooltip content="Welcome to React" position="bottom" trigger="click">
-          Click here to show popup
-        </Tooltip>
       </AccordionItem>
       <AccordionItem key="2" aria-label="Accordion 2" title="Classics">
         <Genre bookArr={classicsArr} />
