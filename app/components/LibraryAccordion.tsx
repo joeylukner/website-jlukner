@@ -14,7 +14,7 @@ interface GenreProps {
   bookArr: Book[];
 }
 
-function Genre({ bookArr }: GenreProps) {
+export function Genre({ bookArr }: GenreProps) {
   return (
     <ul className="list-disc pl-4 pb-4">
       {bookArr.map((book) => (

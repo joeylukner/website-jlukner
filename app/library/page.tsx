@@ -2,12 +2,11 @@ import Link from "next/link";
 import { Accordion, AccordionItem } from "@heroui/accordion";
 import { libraryText } from "../assets/texts";
 import LibraryAccordion from "../components/LibraryAccordion";
+import { Genre } from "../components/LibraryAccordion";
 export default async function About() {
   const response = await fetch("http://localhost:3000/api/books");
   const books = await response.json();
-  console.log(books);
-  console.log(books);
-  console.log(books);
+
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans">
       <div className="flex min-h-screen w-full max-w-5xl flex-col items-center justify-between py-4 px-16 sm:items-start">
@@ -19,7 +18,7 @@ export default async function About() {
         <h1>My Library</h1>
         <p className="library-text">{libraryText}</p>
         {/* <LibraryAccordion /> */}
-        <p>{books}</p>
+        <Genre bookArr={books} />
       </div>
     </div>
   );
