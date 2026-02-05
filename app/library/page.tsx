@@ -5,7 +5,7 @@ import LibraryAccordion from "../components/LibraryAccordion";
 import { Genre } from "../components/LibraryAccordion";
 export default async function About() {
   const response = await fetch("http://localhost:3000/api/books");
-  const books = await response.json();
+  const currentlyReading = await response.json();
 
   return (
     <div className="flex flex-col min-h-screen items-center justify-center font-sans">
@@ -17,8 +17,8 @@ export default async function About() {
         </div>
         <h1>My Library</h1>
         <p className="library-text">{libraryText}</p>
-        {/* <LibraryAccordion /> */}
-        <Genre bookArr={books} />
+        <LibraryAccordion />
+        <Genre bookArr={currentlyReading} />
       </div>
     </div>
   );

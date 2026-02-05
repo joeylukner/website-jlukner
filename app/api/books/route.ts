@@ -1,15 +1,14 @@
-let books: any[] = [
-    {title: "Jitterbug perfume", author: "Tom Robbins"},
-    {title: "The Secret History", author: "Donna Tartt"},
-    {title: "Anna Karenina", author: "Leo Tolstoy"},
+let currentlyReading: any[] = [
+    {title: "Kafka on the Shore", author: "Haruki Murakami"},
+    {title: "Portrait of a Lady", author: "Henry James"},
 ];
 
 export async function POST(request: Request) {
     const book = await request.json();
-    books.push(book);
+    currentlyReading.push(book);
     return Response.json({success: true, book});
 }
 
 export async function GET() {
-    return Response.json(books);
+    return Response.json(currentlyReading);
 }
