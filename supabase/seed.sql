@@ -1,0 +1,25 @@
+insert into books 
+    (title, author, genre)
+    values
+    ('The Song of Achilles', 'Madeline Miller', 1),
+    ('Carry On', 'Rainbow Rowell', 1),
+    ('New Moon', 'Stephanie Myer', 1),
+    ('Jitterbug Perfume', 'Tom Robbins', 2),
+    ('Still Life With Woodpecker', 'Tom Robbins', 2),
+    ('High Maintenance', 'Jennifer Belle', 2),
+    ('Crazy Rich Asians', 'Kevin Kwan', 2),
+    ('The Secret History', 'Donna Tartt', 3 ),
+    ('Confessions of a Mask', 'Yukio Mishima', 3 ),
+    ('The Pillars of the Earth', 'Ken Follett', 3 ),
+    ('World Without End', 'Ken Follett', 3 ),
+    ('American Psycho', 'Bret Easton Ellis', 3 ),
+    ('The Dutch House', 'Ann Patchett', 3 ),
+    ('The Book of Salt', 'Madeline Truong', 3 ),
+    ('Jane Eyre', 'Charlotte Brontë', 4 ),
+    ('Anna Karenina', 'Leo Tolstoy', 4 ),
+    ('Pride and Prejudice', 'Jane Austen', 4 ),
+    ('Ladies of the Rachmaninoff Eyes', 'Henry Van Dyke', 4 ),
+    ('Love in the Time of Cholera', 'Gabriel García Márquez', 4 ),
+    ('One Hundred Years of Solitude', 'Gabriel García Márquez', 4 ),
+    ('The Wrath of Dionysus', 'Nagrodskaia Evdokia', 4 ),
+    ('Swann''s Way', 'Marcel Proust', 4 );
