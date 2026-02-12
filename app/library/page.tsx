@@ -3,6 +3,8 @@ import { Accordion, AccordionItem } from "@heroui/accordion";
 import { libraryText } from "../assets/texts";
 import LibraryAccordion from "../components/LibraryAccordion";
 import { Genre } from "../components/LibraryAccordion";
+import { createClient } from "@/lib/supabase/server";
+
 export default async function About() {
   const response = await fetch("http://localhost:3000/api/books");
   const currentlyReading = await response.json();
